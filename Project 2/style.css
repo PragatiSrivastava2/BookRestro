@@ -1,0 +1,167 @@
+/* CSS RESET  */
+*{
+    margin:  0px 0px 0px 0px;
+    padding:  0px 0px 0px 0px;
+    /* box-sizing: border-box;  */
+    /* border: 2px solid black;  */
+}
+
+/* CSS Variables  */
+:root{ 
+    --navbar-height: 59px;
+}  
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: Logo and Image  */
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin: 0px 0px;
+}
+/* Navigation Bar: List Styling  */
+ /*#navbar{
+    position: relative;
+}*/
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(14, 14, 15);
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.3;  */
+    /* border: 2px solid black;  */
+
+}
+#navbar ul li{
+    /* background-color: rgb(223, 19, 19);   */
+    font-size: 20px;
+    list-style: none;
+    padding: 20px 20px;  
+    
+    
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 4px 22px; 
+    margin: 2px 4px;  
+    border: 2px solid black;; 
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black; 
+    background-color: rgb(158, 162, 167);
+}
+#navbar ul li a:hover{
+    color: rgb(10, 9, 9);
+    background-color: white;
+}
+
+/* Home section  */
+#home{
+    display:flex;
+    flex-direction:column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
+    /* font-style: italic;  */
+}
+#home::before{
+    content: "";
+    position: absolute;
+    /* background-color: rgb(158, 162, 167);  */
+     background-image: url('p21.png');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+
+
+}
+#home-h1{
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4px;
+}
+#home-p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+/* Service section */
+#service{
+    margin: 0px;
+    display: flex;
+    border: 2px solid black; 
+    height: 360px;
+    width: 25%;
+}
+#service.box{
+    height: 196;
+    width: 100%;
+
+}
+#service.box.img{
+    height: 100px; 
+    border: 2px solid greenyellow;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utility Classes  */
+
+.h-primary{
+    margin: 43px;
+    font: 2.8rem;
+    padding: 6px;
+
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px ;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 17px ;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
